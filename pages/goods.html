@@ -3,47 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог товаров</title>
+  <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
 
-  <header>
-    <h1>Мой Сайт</h1>
-  </header>
+  <!-- Весь контент оборачиваем в контейнер -->
+  <div class="page-container">
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="news.html">Новости</a></li>
-      <li><a href="goods.html">Каталог</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
-    </ul>
-  </nav>
+    <!-- Шапка -->
+    <header class="header">
+      <h1>Мой Сайт</h1>
+    </header>
 
-  <main>
-    <section class="goods">
-      <div class="product-card">
-        <img src="img/product1.jpg" alt="Товар 1" width="150">
-        <h3>Товар 1</h3>
-        <p>Цена: 1000 руб.</p>
-      </div>
+    <!-- Навигация -->
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+        <li class="nav-item"><a class="nav-link" href="goods.html">Каталог</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
 
-      <div class="product-card">
-        <img src="img/product2.jpg" alt="Товар 2" width="150">
-        <h3>Товар 2</h3>
-        <p>Цена: 1500 руб.</p>
-      </div>
+    <!-- Основной контент -->
+    <main class="content">
 
-      <div class="product-card">
-        <img src="img/product3.jpg" alt="Товар 3" width="150">
-        <h3>Товар 3</h3>
-        <p>Цена: 2000 руб.</p>
-      </div>
-    </section>
-  </main>
+      <!-- Заголовок каталога -->
+      <section class="profile-header">
+        <h2 class="profile-title">Каталог товаров</h2>
+      </section>
 
-  <footer>
-    <p>&copy; 2025 Мой Сайт. Все права защищены.</p>
-  </footer>
+      <!-- Каталог товаров -->
+      <section class="goods skills-container">
+        <div class="experience-card product-card">
+          <img class="profile-photo" src="img/product1.jpg" alt="Товар 1" width="150">
+          <h3 class="experience-title">Товар 1</h3>
+          <p class="experience-desc">Цена: 1000 руб.</p>
+        </div>
+
+        <div class="experience-card product-card">
+          <img class="profile-photo" src="img/product2.jpg" alt="Товар 2" width="150">
+          <h3 class="experience-title">Товар 2</h3>
+          <p class="experience-desc">Цена: 1500 руб.</p>
+        </div>
+
+        <div class="experience-card product-card">
+          <img class="profile-photo" src="img/product3.jpg" alt="Товар 3" width="150">
+          <h3 class="experience-title">Товар 3</h3>
+          <p class="experience-desc">Цена: 2000 руб.</p>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+      <p>&copy; 2025 Мой Сайт. Все права защищены.</p>
+    </footer>
+
+  </div> <!-- Закрытие .page-container -->
 
 </body>
 </html>
